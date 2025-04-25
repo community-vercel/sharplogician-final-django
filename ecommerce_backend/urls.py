@@ -24,7 +24,7 @@ urlpatterns = [
     # path('jet/', include('jet.urls', 'jet')),
     # path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     path('admin/', admin.site.urls),
-    path('', include('inara.urls')),
+    path('api/', include('inara.urls')),
     path("api/auth/", include("dj_rest_auth.urls")),  # endpoints provided by dj-rest-auth
     # path("api/social/login/",GoogleLoginView.as_view(), name = "google"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
